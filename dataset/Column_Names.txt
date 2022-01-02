@@ -1,0 +1,15 @@
+custid 
+username 
+quote_count 
+ip 
+entry_time 
+prp_1 
+prp_2 
+prp_3 
+ms 
+http_type 
+purchase_category 
+total_count 
+purchase_sub_category 
+http_info 
+status_code 
