@@ -24,3 +24,12 @@
 <i><b>"custid","username","quote_count","ip","entry_time","prp_1","prp_2","prp_3","ms","http_type","purchase_category",</i></b>
 <b><i>"total_count","purchase_sub_category","http_info","status_code"</b></i>
 </p>
+
+<h3><b>My Approach :</b></h3>
+<ul>
+<li>Using Python load the Data to the SQL table store it in the two tables one for the validation and another for shifting the data from the SQL to the HDFS (sqoop job)</li>
+<li>Using the Sqoop Job load the data from the SQL table to the HDFS</li>
+<li>In the Hive create two manage tables<br>One for loading each CSV file and truncating it after shifting the data. <br>another to store entire data having the SCD1 implementation (as we cannot apply the Acid property to the External table) </li>
+<li>Override the Manage Table that had SCD1 got implemented to the External table</li>
+<li>Load the data from the Manage that keeps truncating for every file</li>
+</ul>
