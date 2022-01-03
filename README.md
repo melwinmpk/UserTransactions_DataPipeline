@@ -11,7 +11,7 @@
 <ol>
     <li>load the data from the CSV file to the SQL table.</li>
     <li>Using Sqoop Job (Incremental Load) send the data from the SQL to hdfs.</li>
-    <li>Using Hive first load the Data from hdfs to the Manage table then load the data to the External Table 
+    <li>Using Hive first load the Data from hdfs to the Manage table then load the data to the External Table partition <b>Year wise and then Month wise</b> 
         <b><i>Implement the SCD 1</i></b> in this process. </li>
     <li>Finally, load back the data to another SQL table to cross verify the data from the Source to Destination</li>
 </ol>
